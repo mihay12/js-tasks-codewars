@@ -28,8 +28,18 @@ function litres(time) {
 
 //4. https://www.codewars.com/kata/grasshopper-messi-goals-function/train/javascript?fbclid=IwAR1iF0o2KwNjFVx59-cex6i56OdMYy8TXWtUw77Ft8L59HyP84XI9joOPxk
 
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
 
 //5. https://www.codewars.com/kata/grasshopper-terminal-game-move-function/train/javascript?fbclid=IwAR29SrTWeg6MYk20xGJdvXF-DlGR7thBN68MM_IkatcF7JQciWUKbvDevpQ
 
+function move (position, roll) {
+  return position + roll * 2;
+}
 
 //6. https://www.codewars.com/kata/be-concise-i-the-ternary-operator/train/javascript?fbclid=IwAR2b5zHabEvnfOPDA8XvVnGLbnCwGdWuMqC_AgOAsAyz_bCNb4t9b08bdbs
+
+function describeAge(age) {
+  return (age <= 12 ? "You're a(n) kid" : (age >= 13 && age <= 17 ? "You're a(n) teenager" : (age >= 18 && age <= 64 ? "You're a(n) adult" : "You're a(n) elderly")));
+}
