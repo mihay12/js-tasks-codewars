@@ -40,6 +40,8 @@ function move (position, roll) {
 
 //6. https://www.codewars.com/kata/be-concise-i-the-ternary-operator/train/javascript?fbclid=IwAR2b5zHabEvnfOPDA8XvVnGLbnCwGdWuMqC_AgOAsAyz_bCNb4t9b08bdbs
 
-function describeAge(age) {
-  return (age <= 12 ? "You're a(n) kid" : (age >= 13 && age <= 17 ? "You're a(n) teenager" : (age >= 18 && age <= 64 ? "You're a(n) adult" : "You're a(n) elderly")));
-}
+function describeAge(age){
+  var s="You're a(n)";
+  return (age<=12?s+" kid":(age<=17?s+" teenager":(age<=64?s+" adult":s+" elderly")));}
+
+//7.
