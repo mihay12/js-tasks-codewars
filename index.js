@@ -19,7 +19,7 @@ function greet(name, owner) {
 //3. https://www.codewars.com/kata/keep-hydrated-1/train/javascript?fbclid=IwAR0CYZEBklfGT9hiO-kqxDNIdeNZ8kNiKfHdCkQN6G_ZxEnpn3DcNEEbhDs
 
 function litres(time) {
-  const water = 0.5;
+  const water = 0.15;
   const litres = time * water;
   const botles = Math.floor(litres);
   return botles;
