@@ -32,7 +32,32 @@ function stringToArray(string) {
   return string.split(" ");
 }
 
-//4. 
+//4. https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript?fbclid=IwAR2Ac2owq-tEC6iRYvAQQ7gB489EbN9cKTGzVbbqciait_lgvYOUIDscnqE 
+function min(arr, toReturn) {
+  let minIndex;
+  if (toReturn === "value") {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[0] > arr[i]) {
+        arr[0] = arr[i];
+      }
+    }
+    return arr[0];
+  }
+  minIndex = arr[0];
+  if (toReturn === "index") {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[0] > arr[i]) {
+        arr[0] = arr[i];
+      }
+    }
+    return arr.indexOf(arr[i]);
+  }
+}
+
+//5. https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/javascript?fbclid=IwAR2g4XqbR_z94F1vtBJYr8BMA2oUWCtpib3hGcb4qE034g3ndP7zbe9oJB4
+
+
+//6. https://www.codewars.com/kata/a-wolf-in-sheeps-clothing/train/javascript?fbclid=IwAR3JIuuTPmhz0yk7N1-GBUXlCDw9B4r0vaHho22iRvGOSQ84jWX1X2Cix9E
 
 
 //Завдання не з домашньої роботи:
