@@ -27,6 +27,14 @@ function maps(x) {
   return array;
 }
 
+//3. https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript?fbclid=IwAR3llJ0VKNjb8JnaCBS_bpbu-wIMgxmDvGn2fsUxU89XMJPtlIAsAEu9kVc
+function stringToArray(string) {
+  return string.split(" ");
+}
+
+//4. 
+
+
 //Завдання не з домашньої роботи:
 //1. https://www.codewars.com/kata/5721a78c283129e416000999/train/javascript
 function pickIt(arr) {
