@@ -40,19 +40,18 @@ function warnTheSheep(queue) {
     return "Pls go away and stop eating my sheep";
   } else {
     for (let i = 0; i < queue.length; i++) {
-      console.log(queue[i]);
       if (queue[i] === "sheep") {
         index++;
       } else {
         break;
       }
     }
-    console.log(parseFloat(index));
     return (
       "Oi! Sheep number " + index + "! You are about to be eaten by a wolf!"
     );
   }
-} 
+}
+
 
 //5. https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/javascript?fbclid=IwAR2g4XqbR_z94F1vtBJYr8BMA2oUWCtpib3hGcb4qE034g3ndP7zbe9oJB4
 
