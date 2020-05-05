@@ -9,7 +9,7 @@ function opposite(number) {
 function greet(name, owner) {
   const helloBoss = "Hello boss";
   const helloGuest = "Hello guest";
-  if (name == owner) {
+  if (name === owner) {
     return helloBoss;
   } else {
     return helloGuest;
@@ -19,11 +19,10 @@ function greet(name, owner) {
 //3. https://www.codewars.com/kata/keep-hydrated-1/train/javascript?fbclid=IwAR0CYZEBklfGT9hiO-kqxDNIdeNZ8kNiKfHdCkQN6G_ZxEnpn3DcNEEbhDs
 
 function litres(time) {
-  let hours;
   const water = 0.5;
-  hours = time * water;
-  hours = Math.floor(hours);
-  return hours;
+  const litres = time * water;
+  const botles = Math.floor(litres);
+  return botles;
 }
 
 //4. https://www.codewars.com/kata/grasshopper-messi-goals-function/train/javascript?fbclid=IwAR1iF0o2KwNjFVx59-cex6i56OdMYy8TXWtUw77Ft8L59HyP84XI9joOPxk
@@ -61,34 +60,24 @@ function describeAge(age) {
 //7. https://www.codewars.com/kata/515e188a311df01cba000003/train/javascript
 
 function getPlanetName(id) {
-  let name;
   switch (id) {
     case 1:
-      name = "Mercury";
-      break;
+      return "Mercury";
     case 2:
-      name = "Venus";
-      break;
+      return "Venus";
     case 3:
-      name = "Earth";
-      break;
+      return "Earth";
     case 4:
-      name = "Mars";
-      break;
+      return "Mars";
     case 5:
-      name = "Jupiter";
-      break;
+      return "Jupiter";
     case 6:
-      name = "Saturn";
-      break;
+      return "Saturn";
     case 7:
-      name = "Uranus";
-      break;
+      return "Uranus";
     case 8:
-      name = "Neptune";
-      break;
+      return "Neptune";
   }
-  return name;
 }
 
 //8.
