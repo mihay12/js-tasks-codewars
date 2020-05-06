@@ -79,6 +79,22 @@ console.log(arr);
   }
 }
 
+//7. https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript?fbclid=IwAR1RHPne4_L8z7-aATt0zb131hME4uRfI4Y3nkm4NPtNy5yBrsHB6HB2PYM 
+function DNAtoRNA(dna) {
+  dna.split();
+  let rna = [];
+  console.log(dna);
+  for (let i = 0; i < dna.length; i++) {
+    if (dna[i] === "T") {
+      rna.push("U");
+      continue;
+    }
+    rna.push(dna[i]);
+  }
+
+  return rna.join("");
+}
+
 
 
 //Завдання не з домашньої роботи:
