@@ -54,6 +54,16 @@ function warnTheSheep(queue) {
 
 
 //5. https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/javascript?fbclid=IwAR2g4XqbR_z94F1vtBJYr8BMA2oUWCtpib3hGcb4qE034g3ndP7zbe9oJB4
+function firstNonConsecutive(arr) {
+  console.log(arr);
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i - 1] + 1 !== arr[i]) {
+      console.log(arr[i]);
+      return arr[i];
+    }
+  }
+  return null;
+}
 
 
 //6. https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript?fbclid=IwAR2Ac2owq-tEC6iRYvAQQ7gB489EbN9cKTGzVbbqciait_lgvYOUIDscnqE 
