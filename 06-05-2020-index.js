@@ -58,25 +58,27 @@ function warnTheSheep(queue) {
 
 //6. https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript?fbclid=IwAR2Ac2owq-tEC6iRYvAQQ7gB489EbN9cKTGzVbbqciait_lgvYOUIDscnqE 
 function min(arr, toReturn) {
-  let minIndex;
+console.log(arr);
+  let minIndex = 0;
   if (toReturn === "value") {
     for (let i = 0; i < arr.length; i++) {
       if (arr[0] > arr[i]) {
-        arr[0] = arr[i];
+          arr[0] = arr[i];
       }
     }
     return arr[0];
   }
-  minIndex = arr[0];
   if (toReturn === "index") {
     for (let i = 0; i < arr.length; i++) {
-      if (arr[0] > arr[i]) {
-        arr[0] = arr[i];
+        if (arr[0] > arr[i]) {
+            arr[0] = arr[i];
+            minIndex = i;
+        }  
       }
-    }
-    return arr.indexOf(arr[i]);
+    return minIndex;
   }
 }
+
 
 
 //Завдання не з домашньої роботи:
