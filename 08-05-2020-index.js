@@ -71,11 +71,15 @@ let arr = [];
 }
 
 //5. https://www.codewars.com/kata/understanding-closures-the-basics/train/javascript?fbclid=IwAR3ZJF4owwIbuogxE2SnjaO5lhwGoHvdqZKWtHFjNme6i0max7Tdv6SFvIg
-
-
-
-//Не з домашньої роботи
-//1. https://www.codewars.com/kata/571f1eb77e8954a812000837/train/javascript
-function animal(obj){
-  return "This " + obj.color + " " + obj.name +  " has " + obj.legs + " legs.";
+function buildFun(n){
+	const res = []
+	for (let i = 0; i< n; i++){
+		res.push(function(){
+			return i;
+		})
+	}
+	return res
 }
+
+
+
