@@ -41,3 +41,9 @@ function animal(obj){
 function derive(coefficient,exponent) {
   return `${coefficient * exponent}x^${exponent - 1}`;
 }
+
+//5. https://www.codewars.com/kata/56c5847f27be2c3db20009c3/train/javascript
+function SubtractSum(n){
+  return "apple";
+}
+
