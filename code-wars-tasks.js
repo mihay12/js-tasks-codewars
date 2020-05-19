@@ -47,3 +47,10 @@ function SubtractSum(n){
   return "apple";
 }
 
+//6. https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript
+function past(hours, minutes, seconds){
+  const totalMinutes = hours * 60;
+  const totalSeconds = (minutes + totalMinutes) * 60 ;
+  const time = (seconds + totalSeconds) * 1000;
+  return time;
+}
