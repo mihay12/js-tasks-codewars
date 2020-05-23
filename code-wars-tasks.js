@@ -138,6 +138,7 @@ function greet(language) {
   return languages.english;
 }
 
+//8.2
 const databases = {
   english: 'Welcome',
   czech: 'Vitejte',
@@ -157,8 +158,8 @@ const databases = {
   swedish: 'Valkommen',
   welsh: 'Croeso'
 };
-
-//8.2
 function greet(language) {
 	return databases[language] || "Welcome";
 }
+
+//9.
