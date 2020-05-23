@@ -62,4 +62,103 @@ const copaDelReyGoals = 5;
 
 const totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
 
-//8.
+//8.https://www.codewars.com/kata/577ff15ad648a14b780000e7/train/javascript
+//8.1
+function greet(language) {
+	const languages = {
+    english: 'Welcome',
+    czech: 'Vitejte',
+    danish: 'Velkomst',
+    dutch: 'Welkom',
+    estonian: 'Tere tulemast',
+    finnish: 'Tervetuloa',
+    flemish: 'Welgekomen',
+    french: 'Bienvenue',
+    german: 'Willkommen',
+    irish: 'Failte',
+    italian: 'Benvenuto',
+    latvian: 'Gaidits',
+    lithuanian: 'Laukiamas',
+    polish: 'Witamy',
+    spanish: 'Bienvenido',
+    swedish: 'Valkommen',
+    welsh: 'Croeso'
+  }
+  if (language === "english"){
+    return languages.english;
+  }
+  if (language === "czech"){
+    return languages.czech;
+  }
+  if (language === "danish"){
+    return languages.danish;
+  }
+  if (language === "dutch"){
+    return languages.dutch;
+  }
+  if (language === "estonian"){
+    return languages.estonian;
+  }
+  if (language === "flemish"){
+    return languages.flemish;
+  }
+  if (language === "finnish"){
+    return languages.finnish;
+  }
+  if (language === "french"){
+    return languages.french;
+  }
+  if (language === "german"){
+    return languages.german;
+  }
+  if (language === "irish"){
+    return languages.irish;
+  }
+  if (language === "italian"){
+    return languages.italian;
+  }
+  if (language === "latvian"){
+    return languages.latvian;
+  }
+  if (language === "lithuanian"){
+    return languages.lithuanian;
+  }
+  if (language === "polish"){
+    return languages.polish;
+  }
+  if (language === "spanish"){
+    return languages.spanish;
+  }
+  if (language === "swedish"){
+    return languages.swedish;
+  }
+  if (language === "welsh"){
+    return languages.welsh;
+  }
+  return languages.english;
+}
+
+const databases = {
+  english: 'Welcome',
+  czech: 'Vitejte',
+  danish: 'Velkomst',
+  dutch: 'Welkom',
+  estonian: 'Tere tulemast',
+  finnish: 'Tervetuloa',
+  flemish: 'Welgekomen',
+  french: 'Bienvenue',
+  german: 'Willkommen',
+  irish: 'Failte',
+  italian: 'Benvenuto',
+  latvian: 'Gaidits',
+  lithuanian: 'Laukiamas',
+  polish: 'Witamy',
+  spanish: 'Bienvenido',
+  swedish: 'Valkommen',
+  welsh: 'Croeso'
+};
+
+//8.2
+function greet(language) {
+	return databases[language] || "Welcome";
+}
