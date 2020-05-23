@@ -195,4 +195,14 @@ function points(games) {
   return point;
 }
 
-//11.
+//11. https://www.codewars.com/kata/5a2be17aee1aaefe2a000151/train/javascript
+function arrayPlusArray(firstArray, secondArray) {
+  let sumArray = 0;
+  for (let i = 0; i < firstArray.length; i++) {
+    sumArray += firstArray[i];
+  }
+  for (let i = 0; i < secondArray.length; i++) {
+    sumArray += secondArray[i];
+  }
+  return sumArray;
+}
