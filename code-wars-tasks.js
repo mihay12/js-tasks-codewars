@@ -162,4 +162,37 @@ function greet(language) {
 	return databases[language] || "Welcome";
 }
 
-//9.
+//9. https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3/train/javascript
+function abbrevName(name) {
+  let surname;
+  for (let i = 0; i < name.length; i++) {
+    if (name[i] === " ") {
+      surname = name[i + 1];
+    }
+  }
+  return (name[0] + "." + surname).toUpperCase();
+}
+
+//10. https://www.codewars.com/kata/5bb904724c47249b10000131/train/javascript
+function points(games) {
+  let point = 0;
+  for (let i = 0; i < games.length; i++) {
+    let sinceGame = games[i].split("");
+    for (let j = 0; j < sinceGame.length; j++) {
+      if (sinceGame[j] === ":") {
+        if (sinceGame[j - 1] > sinceGame[j + 1]) {
+          point +=3;
+        }
+        if (sinceGame[j - 1] < sinceGame[j + 1]) {
+          point +=0;
+        }
+        if (sinceGame[j - 1] === sinceGame[j + 1]) {
+          point +=1;
+        }
+      }
+    }
+  }
+  return point;
+}
+
+//11.
