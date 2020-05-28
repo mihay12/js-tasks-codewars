@@ -216,3 +216,21 @@ function check(a, x) {
   }
   return false;
 }
+
+//13.https://www.codewars.com/kata/53573877d5493b4d6e00050c/train/javascript
+function capital(capitals) {
+  let country, capital;
+  let arrayCountry = [];
+  for (let i = 0; i < capitals.length; i++) {
+    for (const property in capitals[i]) {
+      if (property === "country" || property === "state") {
+        country = capitals[i][property];
+      }
+      if (property === "capital") {
+        capital = capitals[i][property];
+      }
+    }
+    arrayCountry.push(`The capital of ${country} is ${capital}`);
+  }
+  return arrayCountry;
+}
