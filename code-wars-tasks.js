@@ -217,7 +217,7 @@ function check(a, x) {
   return false;
 }
 
-//13.https://www.codewars.com/kata/53573877d5493b4d6e00050c/train/javascript
+//13. https://www.codewars.com/kata/53573877d5493b4d6e00050c/train/javascript
 function capital(capitals) {
   let country, capital;
   let arrayCountry = [];
@@ -234,3 +234,10 @@ function capital(capitals) {
   }
   return arrayCountry;
 }
+
+//14. https://www.codewars.com/kata/5ae62fcf252e66d44d00008e/train/javascript
+function expressionMatter(a, b, c) {
+  return Math.max(a * b * c, a + b + c, a * (b + c), (a + b) * c)
+}
+
+//15. 
